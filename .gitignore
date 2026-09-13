@@ -1,0 +1,53 @@
+# ============================================================
+#  Environnements & caches Python
+# ============================================================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# ============================================================
+#  Données audio en entrée (souvent volumineuses) — non versionnées
+# ============================================================
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.opus
+
+# Le .srt (paroles) est petit et sert d'entrée : il reste versionné.
+# Pour l'exclure aussi, décommentez la ligne suivante :
+input/*.srt
+
+# ============================================================
+#  Vidéos produites (sortie finale + extraits de test)
+# ============================================================
+*.mp4
+*.mkv
+*.mov
+*.avi
+
+# ============================================================
+#  Fichiers intermédiaires : tout work/ SAUF le .gitkeep
+#  (on garde ainsi le dossier dans le dépôt, sans son contenu)
+# ============================================================
+work/*
+!work/.gitkeep
+_old/
+
+# ============================================================
+#  Modèles / poids téléchargés par WhisperX & Demucs
+# ============================================================
+*.pth
+*.pt
+.cache/
+
+# ============================================================
+#  Divers OS / éditeurs
+# ============================================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

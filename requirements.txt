@@ -1,0 +1,9 @@
+# Alignement (dernières versions ; incompatibilités absorbées par scripts/_compat.py)
+numpy
+torch
+torchaudio
+whisperx
+# Rendu vidéo
+pillow
+# Isolation des voix (option --demucs)
+demucs
